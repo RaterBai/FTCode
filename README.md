@@ -44,6 +44,7 @@ We examined four machine learning algorithms: 1) logistic regression, 2) support
 To run the code:
 * python 3.5+
 * numpy
+* pandas
 * sklearn
 * os
 * matplotlib
