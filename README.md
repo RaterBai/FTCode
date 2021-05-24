@@ -18,17 +18,17 @@ The final performance of the model was reported by averaging the performance of 
 
 #### Pseudocode of Nested crossvalidation 
 Nested 10-fold Cross-Validation in our study
-1.	Define set of hyper-parameter combinations, C, for each model.
+1.	Define set of hyper-parameter combinations, **C**, for each model.
 2.	Divide data into 10 folds (data from each participant will be distributed into each unique fold)
-3.	(outer loop) For fold i (from 1 to 10) in the 10 folds:
+3.	(**outer loop**) For fold i (from 1 to 10) in the 10 folds:
     <br />
     a.	Set data from i-th fold (data from participant i) as test set
     <br />
     b.	Build machine learning models and fine-tune hyperparameters on the remaining 9 folds (data from 9 participants)
     <br />
-    c.	For hyperparameter combination c in C:
+    c.	For hyperparameter combination c in **C**:
     <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.	(inner loop) Split data from the remaining 9 folds (9 participants) into 3 inner folds (each fold contains data from 3 participants)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.	(**inner loop**) Split data from the remaining 9 folds (9 participants) into 3 inner folds (each fold contains data from 3 participants)
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Set inner fold j (from 1 to 3) as validation set (validation set contains data from 3 participants)
     <br />
