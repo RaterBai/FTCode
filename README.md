@@ -1,6 +1,6 @@
 # Face-touching Recognition 
 <br />
-In this study, we collected accelerometer data from 10 face touching (FT) and non face touching (NFT) activities performed by 10 participants (3 minutes for each activity per participant). We targeted two problems, 1) recognizing FT and NFT activities. 2) individual activity recognition using machine learning. The data is collected through Samsung Gear S3 with a sampling rate of 30Hz. 
+In this study, we collected accelerometer data from 10 face touching (FT) and non face touching (NFT) activities performed by 10 participants (3 minutes for each activity per participant). We targeted two problems, 1) recognizing FT and NFT activities. 2) individual activity recognition (IAR) using machine learning. The data is collected through Samsung Gear S3 with a sampling rate of 30Hz. 
 
 ## Data Preprocessing
 The first 20 and last 5 seconds of the raw accelerometer data were eliminated for each activity. We then splited the raw accelerometer dat into smaller time segments and extracted 49 time- and frequency- domain features.
@@ -42,8 +42,7 @@ Nested 10-fold Cross-Validation in our study
     e.	Evaluate model performance on outer fold i
 4.	Calculate average performance over 10 outer folds
 
-
-We examined four machine learning algorithms: 1) logistic regression, 2) support vector machine, 3) decision tree and 4) random forest. 
+run_analysis_ft.py is used to build machine learning models for the FT/NFT recognition task. And run_analysis_iar.py is used for IAR.
 
 ## Requirements 
 To run the code:
