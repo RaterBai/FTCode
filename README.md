@@ -11,6 +11,11 @@ The final performance of the model was reported by averaging the performance of 
 
 ### Nested Crossvalidation
 
+<p align="center">
+  Overview of nested crossvalidation
+  <img align="middle" src="./nested-cv.png" alt="nested-cv"  />
+</p>
+
 #### Pseudocode of Nested crossvalidation 
 Nested 10-fold Cross-Validation in our study
 1.	Define set of hyper-parameter combinations, C, for each model.
